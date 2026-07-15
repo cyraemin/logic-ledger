@@ -1,5 +1,8 @@
 # Logic Ledger ☁️
 
+live: https://cyraemin.github.io/logic-ledger/
+
+
 A machine learning portfolio and documentation site — algorithms tracked, projects shipped, and handwritten notes, all in one place. Built as a static, dependency-free multi-page site with a pastel lavender glassmorphism aesthetic.
 
 **Author:** [Tamsil Sameera](https://github.com/cyraemin) · [LinkedIn](https://www.linkedin.com/in/tamsil-sameera-32873a3ba) · [tamsilsamira@gmail.com](mailto:tamsilsamira@gmail.com)
