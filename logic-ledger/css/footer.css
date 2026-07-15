@@ -1,0 +1,37 @@
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+footer h3{
+  color: var(--color-text);
+}
+
+.social-links{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.social-links a{
+  text-decoration: none;
+  background: white;
+  padding: 12px 22px;
+  border-radius: var(--radius-pill);
+  color: var(--color-accent-link);
+  font-weight: 700;
+  box-shadow: var(--shadow-pill);
+}
+
+.footer-text{
+  color: var(--color-text-muted);
+  margin-top: 15px;
+}

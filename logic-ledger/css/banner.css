@@ -1,0 +1,102 @@
+/* =========================================================
+   BANNER (homepage hero)
+   ========================================================= */
+
+.pokemon-banner{
+  height: 320px;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  background:
+    radial-gradient(circle at 85% 20%, rgba(255,255,255,.55) 0%, transparent 45%),
+    radial-gradient(circle at 70% 75%, var(--color-accent-softer) 0%, transparent 55%),
+    radial-gradient(circle at 30% 30%, var(--color-accent-pale) 0%, transparent 60%),
+    linear-gradient(120deg, var(--color-accent) 0%, var(--color-accent-soft) 55%, var(--color-accent-softer) 100%);
+}
+
+.banner-blob{
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,.35);
+  filter: blur(2px);
+  animation: drift 9s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.banner-blob.b1{
+  width: 160px;
+  height: 160px;
+  top: -40px;
+  right: 12%;
+  animation-delay: 0s;
+}
+
+.banner-blob.b2{
+  width: 90px;
+  height: 90px;
+  bottom: -20px;
+  right: 30%;
+  background: rgba(255,255,255,.25);
+  animation-delay: 2.5s;
+}
+
+.banner-blob.b3{
+  width: 60px;
+  height: 60px;
+  top: 30%;
+  right: 6%;
+  background: rgba(255,255,255,.4);
+  animation-delay: 5s;
+}
+
+@keyframes drift{
+  0%, 100%{ transform: translateY(0) translateX(0); }
+  50%{ transform: translateY(-16px) translateX(-8px); }
+}
+
+.banner-content{
+  max-width: 550px;
+}
+
+.banner-text{
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: var(--radius-md);
+}
+
+.badge{
+  display: inline-block;
+  padding: 10px 18px;
+  background: rgba(255,255,255,0.25);
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.banner-text h1{
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.banner-text p{
+  color: white;
+}
+
+@media (max-width: 768px){
+  .pokemon-banner{
+    padding: 20px;
+    height: 280px;
+  }
+
+  .banner-text h1{
+    font-size: 2.8rem;
+  }
+}

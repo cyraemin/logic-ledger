@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algorithms — Logic Ledger ☁️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/search.css">
+<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="css/cards.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<div id="sparkle-mount"></div>
+<div id="navbar-mount"></div>
+
+<main>
+
+  <div class="page-header">
+    <h1 class="section-title">Algorithms Journey</h1>
+    <p class="section-lead">Every algorithm I've learned, I'm learning, or I'm about to learn — with notes and code where they exist.</p>
+  </div>
+
+  <section>
+    <div class="page-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="11" cy="11" r="7"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="algo-search" placeholder="Search algorithms..." autocomplete="off">
+    </div>
+
+    <div class="filter-row">
+      <button class="filter-chip is-active" data-status="all">All</button>
+      <button class="filter-chip" data-status="done">Done</button>
+      <button class="filter-chip" data-status="learning">Learning</button>
+      <button class="filter-chip" data-status="upcoming">Upcoming</button>
+    </div>
+
+    <div class="grid" id="algorithms-grid"></div>
+    <p class="no-results" id="no-results">No algorithms match your search.</p>
+  </section>
+
+</main>
+
+<div id="footer-mount"></div>
+
+<script src="js/data.js"></script>
+<script src="js/sparkles.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/render-algorithms.js"></script>
+</body>
+</html>
